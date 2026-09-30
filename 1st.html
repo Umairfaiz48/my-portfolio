@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beautiful Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar Section -->
+    <header>
+        <div class="logo">My<span>Portfolio</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌙 Switch Theme</button>
+    </header>
+
+    <!-- Hero / Main Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Umair</h1>
+            <p>I am a Passionate Web Developer creating beautiful, modern, and clean digital experiences using HTML, CSS, and JavaScript.</p>
+            <div class="buttons">
+                <a href="#contact" class="btn-primary">Hire Me</a>
+                <a href="#projects" class="btn-secondary">View Work</a>
+            </div>
+        </div>
+
+        <!-- 🔥 Aapka lagaya hua Code Box layout yahan sahi kar diya hai -->
+        <div class="hero-image">
+            <div class="code-box">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="tab-title">main.js</span>
+                </div>
+                <div class="code-content" id="typing-code">
+                    <p><span class="keyword">const</span> dev = {</p>
+                    <p class="indent"><span class="property">role</span>: <span class="string">"Web Developer"</span>,</p>
+                    <p class="indent"><span class="property">tech</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JS"</span>],</p>
+                    <p class="indent"><span class="property">status</span>: <span class="string">"Coding Magic"</span></p>
+                    <p>};</p>
+                    <p><span class="keyword">if</span> (dev.status === <span class="string">"Coding Magic"</span>) {</p>
+                    <p class="indent"><span class="function">animateWebsite</span>();</p>
+                    <p>}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Hello! I am a creative front-end developer based in Pakistan. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+                <p>My goal is to build web pages that are fast, responsive, and provide the best user experience. I'm always eager to learn new technologies and improve my coding skills.</p>
+                <div class="skills">
+                    <span class="skill-badge">HTML5</span>
+                    <span class="skill-badge">CSS3</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>E-Commerce Website</h3>
+                <p>A beautiful online shopping store frontend with a clean product layout and interactive cart system feature.</p>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>Weather Forecast App</h3>
+                <p>An interactive application that fetches live weather details using real-time API integrations.</p>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <h3>Personal Dashboard</h3>
+                <p>A modern pastel dark-themed management dashboard to track daily tasks, schedules, and analytics charts.</p>
+                <a href="#" class="project-link">View Project →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="contact-container">
+            <form class="contact-form" onsubmit="event.preventDefault(); showAlert();">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Umair. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
